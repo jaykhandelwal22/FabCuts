@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10sp"
+
+        >
+
+
+        <ImageView
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            android:layout_margin="30sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Map/Check In"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/imap"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/bg"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Past Appointments"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/ipa"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/bg"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Favourites"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/ifav"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/bg"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Tips / How to Use"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:id="@+id/howto"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/bg"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Feedback"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/ifeed"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="@color/bg"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:text="Logout"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:id="@+id/ilog"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

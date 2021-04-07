@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaloonSetUp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@color/white"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select an image to Upload"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10sp"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="200sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ivupload"
+                    android:src="@drawable/logo"/>
+
+                <Button
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Image"
+                    android:layout_margin="10sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/bupload"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvbarbers"
+                android:layout_margin="10sp"
+                android:orientation="horizontal"
+                />
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:orientation="horizontal"
+                android:layout_margin="5sp">
+
+                <EditText
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:id="@+id/etbname"
+                    android:background="@color/white"
+                    android:hint="Type name of barber"/>
+
+                <Button
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:layout_height="40sp"
+                    android:id="@+id/baddbarber"
+                    android:text="Add"/>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10sp">
+
+                <EditText
+                    android:id="@+id/etservicename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Enter Name of Service"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:padding="12dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etservicecost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Enter Cost of Service"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    />
+
+                <EditText
+                    android:id="@+id/etservicetime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="Enter Time Consumed in minutes"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    />
+
+                <Button
+                    android:layout_width="200sp"
+                    android:layout_height="wrap_content"
+                    android:text="Create New Service"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/bcreateservice"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvsalonservices">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+</ScrollView>

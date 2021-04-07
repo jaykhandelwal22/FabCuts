@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity"
+    android:background="@drawable/backgroundfa"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_margin="10sp"
+        android:background="@color/white"
+
+        app:cardCornerRadius="10sp"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30sp"
+                android:layout_height="30sp"
+                android:layout_margin="5sp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_account_circle_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="UserName"
+                android:textSize="16sp"
+                android:id="@+id/tvusername"
+                android:layout_margin="5sp"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fab Cuts"
+        android:id="@+id/tvfabcuts"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="70sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvfabcuts"
+        android:gravity="center_horizontal"
+        android:text="It's gonna be Fab!"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="214dp"
+        android:text="Tap marker to see Map"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="280sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:id="@+id/ivcheckmein"
+        android:elevation="100sp"
+        android:src="@drawable/ic_location_on_black_24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:text="Check In"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:text="(Tap marker for Map)"
+        android:textColor="@color/black" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10sp"
+        android:background="@color/white"
+        app:cardCornerRadius="10sp"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="10sp"
+                    android:src="@drawable/ic_star_border_black_24dp"
+                    android:id="@+id/ivmysalon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="15sp"
+                    android:text="My Salons"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="10sp"
+                    android:src="@drawable/ic_menu_black_24dp"
+                    android:id="@+id/ivmenu"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="15sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Menu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:layout_marginTop="10sp"
+                    android:src="@drawable/ic_notifications_active_black_24dp"
+                    android:id="@+id/ivnotification"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40sp"
+                    android:layout_weight="1"
+                    android:text="Set Alarm"
+                    android:layout_marginTop="15sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

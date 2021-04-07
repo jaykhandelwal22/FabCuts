@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "25958294172",
+    "firebase_url": "https://fabcuts-e79eb.firebaseio.com",
+    "project_id": "fabcuts-e79eb",
+    "storage_bucket": "fabcuts-e79eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:25958294172:android:d8d92ba7d3a8fc999ec359",
+        "android_client_info": {
+          "package_name": "com.fabcuts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "25958294172-t2er5u48amqbbn3l3fv47ebnqhl8hfu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fabcuts",
+            "certificate_hash": "aa1870ea796526deb6ba94d65cb11bfcd401bea6"
+          }
+        },
+        {
+          "client_id": "25958294172-oh9a5nhflen1j4tpb0nag576co7om4ph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfEL611aJacidNPU1KW9kP4oeJ5Tvqi00"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "25958294172-oh9a5nhflen1j4tpb0nag576co7om4ph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

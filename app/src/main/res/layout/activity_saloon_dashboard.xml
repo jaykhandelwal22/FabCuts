@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaloonDashboard">
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF   "
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/aswitch"
+        android:gravity="right" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aswitch"
+        android:id="@+id/rvappointments"
+        android:layout_marginBottom="50sp"
+        android:layout_marginTop="10sp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:id="@+id/baddcustomer"
+            android:text="Add Customer"/>
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Barber ON/OFF"
+            android:id="@+id/bonoff"/>
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Sales"
+            android:visibility="gone"
+            android:id="@+id/bsales"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

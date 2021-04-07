@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCustomer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvbarbername"
+           >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/etcustomername"
+            android:layout_alignParentTop="true"
+            android:hint="Type Customer's Name (optional)"
+            android:layout_margin="10sp"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50sp"
+            android:id="@+id/rvbarberservices"
+            android:layout_margin="10sp"
+            android:layout_below="@+id/etcustomername"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/baddtolist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Add Customer"
+            android:layout_below="@+id/rvbarberservices"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</ScrollView>

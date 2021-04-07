@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fabcuts">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Phone_Auth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaloonRegistration"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaloonSetUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SaloonDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutSalon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SalonServices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CheckedInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MySalon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AppointmentServices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddCustomer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HowToUse"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChangeBarberState"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SalesActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SalonPhotos"></activity>
+    </application>
+
+</manifest>

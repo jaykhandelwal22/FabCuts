@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25sp"
+        android:layout_marginTop="20sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="Saloon Registration"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_gravity="end" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter Phone Number"
+            android:inputType="number"
+            android:maxLines="1"
+            android:backgroundTint="#fff"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#fff"
+            android:hint="Enter Salon Name"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            />
+
+
+        <EditText
+            android:id="@+id/etcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#fff"
+            android:hint="Enter Address"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#fff"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="12dp"
+            />
+
+        <EditText
+            android:id="@+id/secret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#fff"
+            android:hint="Enter Secret Code"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:padding="12dp"
+            />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:backgroundTint="@color/colorPrimary"
+            app:cardCornerRadius="10sp"
+            android:layout_marginTop="10sp"
+            android:elevation="15sp">
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:text="Register"
+            android:textSize="20sp"
+            android:textColor="#fff" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25sp"
+            android:id="@+id/tvexistingsalon"
+            android:text="Existing Salon?"
+            android:layout_marginTop="10sp"
+            android:textSize="15sp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
